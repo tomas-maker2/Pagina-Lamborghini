@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/820d828ec1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./CSS/style2.css">
+</head>
+<body>
+    <div class="wrapper2">
+
+        <aside>
+            <header>
+                <a href="index.html"><h1><span>C</span>ars<span>S</span>hop</h1></a>
+            </header>
+            <nav>
+                <ul>     
+                    <li><a class="boton-menu boton-volver" href="./tienda.html"><i class="fa-solid fa-arrow-rotate-left"></i> Seguir Comprando</a></li>
+                </ul>
+                <ul>     
+                    <li><a class="boton-menu boton-carrito active" href="./carrito.html"><i class="fa-solid fa-cart-shopping"></i> Carrito </a></li>
+                </ul>
+            </nav>
+            <footer>
+                <p class="texto-footer">© 2023 totito</p>
+            </footer>
+        </aside>
+
+        <main>
+            <h2 class="titulo-principal">Carrito</h2>
+            <div class="contenedor-carrito">
+                <p id="carrito-vacio" class="carrito-vacio">tu carrito esta vacio <i class="fa-solid fa-face-sad-cry"></i></p>
+            
+            <div id="carrito-productos" class="carrito-productos disabled">
+                <!-- CON JS -->
+            </div>
+
+            
+            <div id="carrito-acciones" class="carrito-acciones disabled">
+                <div class="carrito-acciones-izquierda">
+                    <button id="carrito-acciones-vaciar" class="carrito-acciones-vaciar">Vaciar Carrito</button>
+                </div>
+                <div class="carrito-acciones-derecha">
+                    <div class="carrito-acciones-total">
+                        <p>Total</p>
+                        <p id="total">3000$</p>
+                    </div>
+                    <button id="carrito-acciones-comprar" class="carrito-acciones-comprar">Comprar Ahora</button>
+                </div>
+            </div>
+            <p id="carrito-comprado" class="carrito-comprado disabled">Muchas gracias por tu compra <i class="fa-regular fa-face-smile-wink"></i></p>
+            </div>
+        </main>
+    </div>
+    
+    
+    <script src="./JS/carrito.js"></script>
+</body>
+</html>

@@ -1,0 +1,288 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    /* background: rgb(193,5,5);
+    background: radial-gradient(circle, rgba(193,5,5,1) 0%, rgba(107,1,1,1) 35%, rgba(116,11,11,1) 70%, rgba(196,4,4,1) 100%); */
+    background-image: url(https://images5.alphacoders.com/815/815709.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+aside{
+    padding: 2rem;
+    color: white;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-right: 0;
+}
+
+.texto-footer{
+    font-size: 1rem;
+    color: rgb(144, 134, 134);
+}
+
+aside header a{
+    text-decoration: none;
+    color:  rgb(181, 153, 153) ;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+aside header a span{
+    color: crimson;
+    text-transform: uppercase;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+
+.boton-menu{
+    background-color: transparent;
+    border: none;
+    color: rgb(181, 153, 153) ;
+    font-size: 1.4rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: .8rem;
+    border-top-left-radius:1rem ;
+    border-bottom-left-radius: 1rem;
+    width: 100%;
+}
+
+.boton-carrito{
+    margin-top: 4rem;
+}
+
+.numerito{
+    background-color: white;
+    color: black;
+    font-weight: 700;
+    padding: 0 .30rem;
+    border-radius: .30rem;
+}
+
+.boton-menu.active{
+    background-color:  rgba(28, 21, 21, 0.529);
+    color:  rgb(181, 153, 153);
+    width: 100%;
+}
+
+main{
+    /* background-color: rgb(22, 20, 20); */
+    background-color: rgba(28, 21, 21, 0.529);
+    margin: 1rem;
+    border-radius: 2rem;
+    padding: 3rem;
+    margin-left: 0px;
+}
+
+.titulo-principal{
+    color: rgb(181, 153, 153);
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.contenedor-productos{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+}
+
+.producto-imagen{
+    max-width: 100%;
+    border-radius: 1.5rem;
+}
+
+.producto-detalle{
+    background-color: #0b0a0a;
+    color: rgb(181, 153, 153);
+    padding:1rem ;
+    border-radius: 1.5rem;
+    margin-top: -2rem;
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.producto-titulo{
+    font-size: 1.3rem;
+}
+
+.producto-precio{
+    font-size: 1.1rem;
+}
+
+.producto-agregar{
+    border: 0;
+    background-color:  rgb(181, 153, 153);
+    color: black;
+    padding: .6rem;
+    text-transform: uppercase;
+    border-radius: 1rem;
+    cursor: pointer;
+    border: 2px solid white;
+    font-size: 1rem;
+    transition:  background-color .2s, color .2s;
+}
+
+.producto-agregar:hover{
+    background-color: rgb(206, 1, 1);
+    color:  rgb(181, 153, 153);
+    border: none;
+}
+
+
+/* CARRITO */
+
+.wrapper2{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    /* background: rgb(193,5,5);
+    background: radial-gradient(circle, rgba(193,5,5,1) 0%, rgba(107,1,1,1) 35%, rgba(116,11,11,1) 70%, rgba(196,4,4,1) 100%); */
+    background-image: url(https://cdn.motor1.com/images/mgl/MoVM6/s1/lamborghini-sc18-alston.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.carrito-vacio,
+.carrito-comprado{
+    color: rgb(181, 153, 153) ;
+    font-size: 1.5rem;
+    /* display: none; */
+}
+
+.carrito-productos{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+}
+
+.carrito-producto-imagen{
+    width: 15rem;
+    border-radius: 1rem;
+}
+
+.carrito-producto{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    padding: 0.5rem;
+    padding-right: 1.5rem;
+    color:  rgb(181, 153, 153);
+    border-radius: 1rem;
+}
+
+.carrito-producto small{
+    font-size: 1rem;
+}
+
+.carrito-producto-eliminar{
+    border:none;
+    background-color: transparent;
+    color: rgb(181, 153, 153);
+    font-size: 2rem;
+    margin-right: 1.5rem;
+    cursor: pointer;
+    transition: font-size .2s ease;
+}
+
+.carrito-producto-eliminar:hover{
+    color: rgb(230, 8, 8);
+    font-size: 2.1rem;
+}
+
+
+.contenedor-carrito{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+
+.carrito-acciones{
+    display: flex;
+    justify-content: space-between;
+}
+
+.carrito-acciones-vaciar{
+    border: none;
+    padding: 1rem;
+    border-radius: .5rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    background-color: rgb(181, 153, 153) ;
+}
+
+.carrito-acciones-vaciar:hover{
+    background-color: rgb(219, 4, 4);
+    color: white;
+    text-transform: uppercase;
+}
+
+.carrito-acciones-comprar{
+    border: none;
+    padding: 1rem;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    background-color: rgb(22, 20, 20);
+    color: white;
+}
+
+
+.carrito-acciones-comprar:hover{
+    background-color:  rgb(219, 4, 4);
+    text-transform: uppercase;
+}
+
+.carrito-acciones-derecha{
+    display: flex;
+}
+
+.carrito-acciones-total{
+    display: flex;
+    border: none;
+    padding: 1rem;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    text-transform: uppercase;
+    background-color:  rgb(223, 207, 207);
+    color: black;
+    gap: 1rem;
+}
+
+
+
+/* CLASE PARA OCULTAR */
+
+.disabled{
+    display: none;
+}
